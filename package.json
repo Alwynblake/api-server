@@ -1,0 +1,35 @@
+{
+  "name": "api-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node list/index.js",
+    "lint": "eslint '**/*.js'",
+    "test": "node_modules/.bin/jest --coverage --verbose",
+    "test-watch": "node_modules/.bin/jest --watchAll --verbose --coverage",
+    "jsdoc": "node_modules/.bin/jsdoc -c ./docs/config/jsdoc.config.json",
+    "watch": "node_modules/.bin/jest --watchAll --coverage --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alwynblake/api-server.git"
+  },
+  "author": "Alistair Blake",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alwynblake/api-server/issues"
+  },
+  "homepage": "https://github.com/Alwynblake/api-server#readme",
+  "dependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.20.0",
+    "express": "^4.17.1",
+    "express-swagger-generator": "^1.1.15",
+    "jest": "^24.9.0",
+    "superagent": "^5.1.0",
+    "supertest": "^4.0.2"
+  }
+}
